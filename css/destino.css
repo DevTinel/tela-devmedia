@@ -1,0 +1,110 @@
+h1 {
+  font-size: 30px;
+  font-weight: normal;
+  margin-left: 20px;
+}
+.form-destino {
+  background: url("../imagens/bg-header.jpg") no-repeat;
+  background-size: cover;
+  height: 700px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-form input {
+  border: none;
+  width: 100%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: max-content;
+  padding: 30px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  justify-content: space-between;
+  border-radius: 4px;
+  width: calc(100% - 40px);
+}
+.form select {
+  border: none;
+  padding-right: 2px;
+}
+.item-form {
+    border: none;
+}
+
+.form-itens {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 20px;
+}
+.item-form {
+  padding: 10px;
+  width: 30%;
+  display: flex;
+  margin-top: 15px;
+  border: 2px solid #ececec;
+  gap: 20px;
+}
+.item-form:checked {
+  border: none;
+}
+.div-form-dest {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.btn-destino {
+  width: 30%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #ee5057;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+@media (max-width: 760px) {
+  h1 {
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: -20px;
+  }
+  .form-destino {
+    height: 800px;
+  }
+  .form {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .div-form-dest {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-left: 0px;
+  }
+  .item-form,
+  button {
+    width: 100%;
+    padding: 15px;
+  }
+  h1 {
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-destino {
+    padding: 15px;
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto';
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+.btn{
+    background-color: #EE5057;
+    padding: 10px 20px;
+    color: #fff;
+    width: 100%;
+}
+.label{
+    display: inline-block;
+    margin-top: 5px;
+}
