@@ -8,7 +8,7 @@
 .vantagens-container{
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 60px;
     margin: auto;
 }
 h2{
@@ -32,7 +32,7 @@ span{
     gap: 10px;
     width: 300px;
     padding: 20px;
-    border: 2px solid #aca8a8;
+    border: 1px solid #aca8a8;
     border-radius: 8px;
     text-align: center;
     line-height: 1.5;    
@@ -40,21 +40,29 @@ span{
 .separador{
     text-align: center;
     width: 100%;
-    padding: 100px 0 100px ;
+    padding: 50px 0  ;
     background-color: #EE5057;
     color: #fff;
     font-size: 60px;
     margin-top: 70px;
 }
+.separador p{
+    margin: 0 auto;
+    font-size: 40px;
+}
 
 @media(max-width:1024px){
     h2{
-        margin:30px 80px;
+        margin-top:60px;
+        margin-bottom:50px;
+    }
+    .separador p {
+        width: 650px;
     }
     .vantagens-container{
         display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
+        flex-wrap: nowrap;
+        gap: 35px;
         margin: 20px;
     }
     .card{
@@ -62,9 +70,27 @@ span{
         border-radius: 20px;
     }
 }
+@media(max-width:768px){
+   
+    .separador p {
+        width: 650px;
+    }
+    .vantagens-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        margin: 20px;
+    }
+ 
+}
 
 @media (max-width:425px){
-    .separador{
-        font-size: 50px;
+    .separador p{
+        font-size: 35px;
+        width: 250px;
+    }
+    .vantagens h2{
+        width: 250px;
+        margin: 40px auto;
     }
 }

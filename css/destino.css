@@ -1,13 +1,13 @@
 h1 {
   font-size: 30px;
   font-weight: normal;
-  margin-left: 20px;
+  margin-bottom: 15px;
 }
 .form-destino {
   background: url("../imagens/bg-header.jpg") no-repeat;
   background-size: cover;
-  height: 700px;
-  padding-top: 100px;
+  padding-top: 150px;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,52 +23,66 @@ h1 {
   background-color: #fff;
   height: max-content;
   padding: 30px;
+  width: 60%;
   flex-wrap: wrap;
   margin: 40px auto;
   justify-content: space-between;
   border-radius: 4px;
-  width: calc(100% - 40px);
+  padding-bottom: -50px;
 }
 .form select {
   border: none;
   padding-right: 2px;
+  width: 100%;
+  text-align: center;
 }
 .item-form {
     border: none;
+}
+.div-form-dest {
+  display: flex;
+  gap: 0 10px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.div-form-dest:first-child{
+  margin-bottom: 10px;
 }
 
 .form-itens {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
-  margin: 20px;
 }
 .item-form {
   padding: 10px;
-  width: 30%;
+  width: 32%;
   display: flex;
-  margin-top: 15px;
   border: 2px solid #ececec;
   gap: 20px;
 }
 .item-form:checked {
   border: none;
 }
-.div-form-dest {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+
+form{
+  width: 100%;
 }
 .btn-destino {
-  width: 30%;
+  width: 32%;
   padding: 10px;
-  margin-top: 15px;
+  text-align: center ;
   background-color: #ee5057;
   border: none;
   color: #fff;
   font-weight: 400;
   letter-spacing: 0.1em;
   cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .form{
+    width:90%;
+  }
+  
 }
 @media (max-width: 760px) {
   h1 {
@@ -108,3 +122,22 @@ h1 {
   }
 }
 
+@media(max-width:500px){
+  .form {
+    margin-top: -250px;
+    margin-bottom: -200px;
+  }
+  .item-form{
+    margin-bottom: 10px;
+  }
+
+}
+@media (max-width: 400px) {
+  h1{
+    text-align: left;
+  } 
+  .formulario2-itens {
+    width: 100%;
+    padding-left: 30px;
+  }
+  }

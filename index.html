@@ -1,252 +1,200 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- FONT-FAMILY : ROBOTO -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <img src="imagens/logo.png" alt="logo" />
-      <nav>
-        <a href="#">HOME</a>
-        <a href="#">LUGARES</a>
-        <a href="#">CONTATO</a>
-      </nav>
-    </header>
-    <!-- SECTION FORMULARIO DESTINO -->
-    <main>
-      <section class="form-destino">
-        <div>
-          <div class="form">
-            <h1>Escolha seu destino</h1>
-            <div class="form-itens">
-              <form
-                action="https://www.devmedia.com.br/codigos/devmedia-academy/html-css/destino.php"
-                method="POST"
-              >
-                <div class="div-form-dest">
-                  <div class="item-form">
-                    <img src="imagens/icone-pin.png" alt="icone-pin" />
-                    <input
-                      type="text"
-                      placeholder="Seu destino"
-                      name="destino"
-                      required
-                    />
-                  </div>
-                  <div class="item-form">
-                    <img
-                      src="imagens/icone-calendario.png"
-                      alt="icone-calendario"
-                    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- FONT-FAMILY : ROBOTO -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet" />
+</head>
 
-                    <input
-                      placeholder="Check In"
-                      type="text"
-                      name="checkin"
-                      onfocus="(this.type='date')"
-                      onblur="(this.type='text')"
-                      required
-                    />
-                  </div>
-                  <div class="item-form">
-                    <img
-                      src="imagens/icone-calendario.png"
-                      alt="icone-calendario"
-                    />
-                    <input
-                      placeholder="Check Out"
-                      type="text"
-                      name="checkout"
-                      onfocus="(this.type='date')"
-                      onblur="(this.type='text')"
-                      required
-                    />
-                  </div>
-                </div>
+<body>
+  <header class="header">
+    <img src="imagens/logo.png" alt="logo" />
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#">LUGARES</a>
+      <a href="#">CONTATO</a>
+    </nav>
+  </header>
+  <!-- SECTION FORMULARIO DESTINO -->
+  <main>
+    <section class="form-destino">
+      <div class="form">
+        <h1>Escolha seu destino</h1>
+        <div class="form-itens">
+          <form action="https://www.devmedia.com.br/codigos/devmedia-academy/html-css/destino.php" method="POST">
+            <div class="div-form-dest">
+              <div class="item-form">
+                <img src="imagens/icone-pin.png" alt="icone-pin" />
+                <input type="text" placeholder="Seu destino" name="destino" required />
+              </div>
+              <div class="item-form">
+                <img src="imagens/icone-calendario.png" alt="icone-calendario" />
 
-                <div class="div-form-dest">
-                  <div class="item-form">
-                    <img src="imagens/icone-pessoa.png" alt="icone-pessoa" />
-                    <label class="label">Adultos</label>
-                    <select name="adultos" id="adultos" required>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                    </select>
-                  </div>
-
-                  <div class="item-form">
-                    <img src="imagens/icone-pessoa.png" alt="icone-pessoa" />
-                    <label class="label">Crianças</label>
-                    <select name="criancas" required>
-                      <option value="0">0</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                    </select>
-                  </div>
-                  <button class="btn-destino" type="submit">BUSCAR</button>
-                </div>
-              </form>
+                <input placeholder="Check In" type="text" name="checkin" onfocus="(this.type='date')" onblur="(this.type='text')" required />
+              </div>
+              <div class="item-form">
+                <img src="imagens/icone-calendario.png" alt="icone-calendario" />
+                <input placeholder="Check Out" type="text" name="checkout" onfocus="(this.type='date')" onblur="(this.type='text')" required />
+              </div>
             </div>
-          </div>
+
+            <div class="div-form-dest">
+              <div class="item-form">
+                <img src="imagens/icone-pessoa.png" alt="icone-pessoa" />
+                <label class="label">Adultos</label>
+                <select name="adultos" id="adultos" required>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+
+              <div class="item-form">
+                <img src="imagens/icone-pessoa.png" alt="icone-pessoa" />
+                <label class="label">Crianças</label>
+                <select name="criancas" required>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+              <button class="btn-destino" type="submit">BUSCAR</button>
+            </div>
+          </form>
         </div>
-      </section>
-      <!-- FIM DA SECTION FORMULARIO DESTINO -->
-
-      <!-- SECTION VANTAGENS -->
-      <section class="vantagens">
-        <h2>As melhores vantagens para a sua tranquilidade</h2>
-        <div class="vantagens-container">
-          <div class="passagens-aereas card">
-            <img src="imagens/icone-aviao.png" alt="icone-aviao" />
-            <span>Passagens Aéreas</span>
-            <p>
-              Toda aquisição de passgem é de nossa responsabilidade, sua
-              obrigação é apenas entrar no avião e aproveitar
-            </p>
-          </div>
-
-          <div class="passagens-maritimas card">
-            <img src="imagens/icone-boia.png" alt="icone-boia" />
-            <span>Passagens Maritimas</span>
-            <p>
-              Para os amantes das grandes cidades que procuram agitação e querem
-              fugir do silêncio de um lugar pacato, uma grande metrópole é a
-              melhor opção.
-            </p>
-          </div>
-
-          <div class="assessoria card">
-            <img src="imagens/icone-martelo.png" alt="icone-martelo" />
-            <span>Assessoria Jurídica</span>
-            <p>
-              Toda aquisição de passagem é de nossa responsabilidade sua
-              obrigação é apenas entrar no avião e aproveitar
-            </p>
-          </div>
-        </div>
-      </section>
-      <!--FIM DA SECTION VANTAGENS  -->
-
-      <div class="separador">
-        <p>O sonho da sua viagem se tornando realidade</p>
       </div>
+    </section>
+    <!-- FIM DA SECTION FORMULARIO DESTINO -->
 
-      <!--SE    CTION LOCAIS RECOMENDADOS  -->
-      <section class="locais-recomendados">
-        <div class="locais-container">
-          <div class="locais-container-itens">
-            <img src="imagens/noticia-1.jpg" alt="noticia 1" />
-            <strong>tranquilidade e calmaria</strong>
-            <p>
-              Para quem curti a brisa no rosto, sua única responsabilidade é
-              aproveitar o passeio, cuidamos de toda parte das passagens
-            </p>
-            <a class="btn" href="#">SAIBA MAIS</a>
+    <!-- SECTION VANTAGENS -->
+    <section class="vantagens">
+      <h2>As melhores vantagens para a sua tranquilidade</h2>
+      <div class="vantagens-container">
+        <div class="passagens-aereas card">
+          <img src="imagens/icone-aviao.png" alt="icone-aviao" />
+          <span>Passagens Aéreas</span>
+          <p>
+            Toda aquisição de passgem é de nossa responsabilidade, sua
+            obrigação é apenas entrar no avião e aproveitar
+          </p>
+        </div>
+
+        <div class="passagens-maritimas card">
+          <img src="imagens/icone-boia.png" alt="icone-boia" />
+          <span>Passagens Maritimas</span>
+          <p>
+            Para os amantes das grandes cidades que procuram agitação e querem
+            fugir do silêncio de um lugar pacato, uma grande metrópole é a
+            melhor opção.
+          </p>
+        </div>
+
+        <div class="assessoria card">
+          <img src="imagens/icone-martelo.png" alt="icone-martelo" />
+          <span>Assessoria Jurídica</span>
+          <p>
+            Toda aquisição de passagem é de nossa responsabilidade sua
+            obrigação é apenas entrar no avião e aproveitar
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--FIM DA SECTION VANTAGENS  -->
+
+    <div class="separador">
+      <p>O sonho da sua viagem se tornando realidade</p>
+    </div>
+
+    <!--SE    CTION LOCAIS RECOMENDADOS  -->
+    <section class="locais-recomendados">
+      <div class="locais-container">
+        <div class="locais-container-itens">
+          <img class="margin-top" src="imagens/noticia-1.jpg" alt="noticia 1" />
+          <strong>tranquilidade e calmaria</strong>
+          <p>
+            Para quem curti a brisa no rosto, sua única responsabilidade é
+            aproveitar o passeio, cuidamos de toda parte das passagens
+          </p>
+          <a class="btn" href="#">SAIBA MAIS</a>
+        </div>
+
+        <div class="locais-container-itens">
+          <img class="margin-top" src="imagens/noticia-2.jpg" alt="noticia 2" />
+          <strong>Para quem curte a agitação da <br> metrópole</strong>
+          <p>
+            No caso de qualquer problema ou contratempo, temos um time
+            jurídico para te auxiliar em qualquer questão
+          </p>
+          <a class="btn" href="#">SAIBA MAIS</a>
+        </div>
+
+        <div class="dif">
+          <p class="efeito">Conheça alguns locais que recomendamos</p>
+          <div class="menor">
+            <img src="imagens/europa.jpg" alt="" />
+            <p>Europa</p>
           </div>
-
-          <div class="locais-container-itens">
-            <img src="imagens/noticia-2.jpg" alt="noticia 2" />
-            <strong>Para quem curte a agitação da metrópole</strong>
-            <p>
-              No caso de qualquer problema ou contratempo, temos um time
-              jurídico para te auxiliar em qualquer questão
-            </p>
-            <a class="btn" href="#">SAIBA MAIS</a>
+          <div class="menor">
+            <img src="imagens/asia.jpg" alt="" />
+            <p>Ásia</p>
           </div>
-
-          <div class="dif">
-            <p class="efeito">Conheça alguns locais que recomendamos</p>
-            <div class="menor">
-              <img src="imagens/europa.jpg" alt="" />
-              <p>Europa</p>
-            </div>
-            <div class="menor">
-              <img src="imagens/asia.jpg" alt="" />
-              <p>Ásia</p>
-            </div>
-            <div class="menor">
-              <img src="imagens/africa.jpg" alt="" />
-              <p>África</p>
-            </div>
-            <div class="menor">
-              <img src="imagens/america.jpg" alt="" />
-              <p>Ámerica do Sul</p>
-            </div>
+          <div class="menor">
+            <img src="imagens/africa.jpg" alt="" />
+            <p>África</p>
+          </div>
+          <div class="menor">
+            <img src="imagens/america.jpg" alt="" />
+            <p>Ámerica do Sul</p>
           </div>
         </div>
-      </section>
-      <!-- FIM DA SECTION LOCAIS RECOMENDADOS -->
+      </div>
+    </section>
+    <!-- FIM DA SECTION LOCAIS RECOMENDADOS -->
 
-      <!-- SECTION FORMULARIO CONTATO -->
-      <section id="contato" class="contato">
-        <h2>CONTATO</h2>
-        <div class="formulario2">
-          <div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.95410688!2d2.276995301571!3d48.85883363934097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e0!3m2!1spt-BR!2sbr!4v1659217563748!5m2!1spt-BR!2sbr"
-              width="500"
-              height="440"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-
-          <div class="formulario2-itens">
-            <form
-              action="https://www.devmedia.com.br/codigos/devmedia-academy/html-css/contato.php"
-              method="POST"
-            >
-              <input type="text" name="nome" placeholder="Nome" required />
-              <input type="email" name="email" placeholder="Email" required />
-              <input
-                type="assunto"
-                name="assunto"
-                placeholder="Assunto"
-                required
-              />
-              <input
-                type="text"
-                name="mensagem"
-                placeholder="mensagem"
-                required
-              />
-              <button class="btn-contato" type="submit">ENVIAR</button>
-            </form>
-          </div>
+    <!-- SECTION FORMULARIO CONTATO -->
+    <section id="contato" class="contato">
+      <h2>CONTATO</h2>
+      <div class="formulario2">
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.95410688!2d2.276995301571!3d48.85883363934097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e0!3m2!1spt-BR!2sbr!4v1659217563748!5m2!1spt-BR!2sbr" width="600" height="470" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-      </section>
-      <!-- FIM DA SECTION FORMULARIO CONTATO -->
 
-      <!-- FOOTER -->
-      <footer>
-        <p>
-          Desenvolvido por
-          <a target="_blank" href="https://devtinel.github.io/">DevTinel</a>
-        </p>
-      </footer>
-    </main>
-  </body>
+        <div class="formulario2-itens">
+          <form action="https://www.devmedia.com.br/codigos/devmedia-academy/html-css/contato.php" method="POST">
+            <input type="text" name="nome" placeholder="Nome" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="assunto" name="assunto" placeholder="Assunto" required />
+            <input type="text" name="mensagem" placeholder="mensagem" required />
+            <button class="btn-contato" type="submit">ENVIAR</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- FIM DA SECTION FORMULARIO CONTATO -->
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        Desenvolvido por
+        <a target="_blank" href="https://devtinel.github.io/">DevTinel</a>
+      </p>
+    </footer>
+  </main>
+</body>
+
 </html>

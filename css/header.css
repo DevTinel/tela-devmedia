@@ -2,8 +2,9 @@
 header{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
+    padding: 0 100px;
     position: fixed;
     background-color: #fff;
     margin-bottom: 10px;
@@ -36,42 +37,39 @@ nav a:hover{
     color: #fff;
 }
 
+
 @media (max-width:1024px){
 
     header{
         width:100%;
-    padding-bottom: 2px;
+         padding-bottom: 2px;
+         padding: 0 80px;
 
-        justify-content: space-between;
     }
     header img{
-        margin-left: 40px;
-        width: 140px;
+        width: 120px;
+
     }
  
 }
 @media (max-width:768px){
-    header img{
-        margin-left: 40px;
-        width: 140px;
-    }
     header{
-        width: 100%;
-        justify-content: space-between;
+        width:100%;
+         padding-bottom: 2px;
+         padding: 0 0px;
+
     }
-    nav{
-        height: 70px;
-    }
-    nav a{
-        justify-items: center;
-        font-weight: normal;
-    }
-    nav a:last-child{
-        border-right : none ;
+    header img{
+        width: 120px;
+        margin-left: 40px;
+
     }
 }
 
 @media (max-width:700px) {
+    header{
+        width: 100%;
+    }
     nav {
         display: none;
     }
@@ -80,3 +78,22 @@ nav a:hover{
         margin-left: 20px;
     }
 }
+@media (max-width:500px) {
+ 
+   
+    header img{
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    h1{
+        padding-bottom: 40px;
+    }
+}
+
+
+@media (min-width : 1920px){
+    header{
+         padding: 0px 100px  ;
+         } 
+ 
+ }
