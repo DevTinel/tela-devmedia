@@ -84,13 +84,17 @@ span{
  
 }
 
-@media (max-width:425px){
+@media(max-width:768px){
+    .separador{
+        width: 100%;
+    }
     .separador p{
         font-size: 35px;
-        width: 250px;
+        width: 100%;
+        text-align: center;
     }
     .vantagens h2{
-        width: 250px;
+        width:100% ;
         margin: 40px auto;
     }
 }

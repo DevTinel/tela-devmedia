@@ -91,9 +91,15 @@ nav a:hover{
 }
 
 
+@media (min-width : 1366px){
+    header{
+         padding: 0px 200px  ;
+         } 
+ 
+ }
 @media (min-width : 1920px){
     header{
-         padding: 0px 100px  ;
+         padding: 0px 300px  ;
          } 
  
  }

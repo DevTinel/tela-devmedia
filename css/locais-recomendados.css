@@ -56,6 +56,10 @@
     background-color: #ececec;
     width: 270px;
 }
+.menor:last-child{
+    margin-bottom: 10px;
+
+}
 .efeito {
     margin-left: -2px;
     padding-left: -2px;
@@ -63,7 +67,7 @@
     background-color: #EE5057;
     color: #fff;
 }
-@media (max-width:1024px){
+@media (max-width:1325px){
     .locais-container{
         gap: 40px 70px;
     }
@@ -83,6 +87,10 @@
         margin:0 20px;
         width: 95%;
     }
+    .menor:last-child{
+        margin-bottom: -10px;
+    
+    }
 }
 @media(max-width:768px){
     .dif{
@@ -90,13 +98,14 @@
     }
     .locais-container{
         flex-wrap: nowrap;
-        gap: 70px;
+        gap: 0px;
         justify-content: space-around;
-        width: 90%;
+        width: 100%;
     }
     .locais-container-itens{
         width: 330px;
     }
+   
     .locais-container-itens img{
         width: 330px
     };
@@ -107,11 +116,31 @@
         flex-wrap: wrap;
       
     }
-   
 }
+@media(max-width:700px){
+    .locais-container{
+        flex-wrap: nowrap;
+        gap: 30px;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .locais-container-itens{
+        width: 250px;
+    }
+    .locais-container-itens img{
+    width: 250px  
+  };
+}
+
 @media(max-width:500px){
  .locais-container-itens:first-child{
     display: none;
  }
+ .locais-container-itens{
+    width: 300px;
+}
+.locais-container-itens img{
+    width: 300px;
+}
    
 }

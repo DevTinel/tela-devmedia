@@ -122,7 +122,11 @@ form{
   }
 }
 
-@media(max-width:500px){
+@media(max-width:759px){
+  h1 {
+   margin-bottom: 20px;
+   text-align: left;
+  }
   .form {
     margin-top: -250px;
     margin-bottom: -200px;
